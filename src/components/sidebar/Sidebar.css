@@ -1,0 +1,75 @@
+/* 導覽列 */
+.sidebar{
+    width: 150px;
+    height: 100vh;
+    background-color: #d80011;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    transform: translateX(-150px);
+    transition: transform 0.5s ease;
+}
+.sidebar-open{
+    transform: translateX(0px);
+}
+.logo{
+    height: 15vh;
+}
+.logo-image{
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+}
+.main-navbar{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.btn-link{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 5px 0px;
+    transition: color 0.5s ease,background-color 0.5s ease;
+}
+.link-icon{
+    font-size: 18px;
+    margin-right: 8px;
+}
+.btn-link:hover{
+    color: #d80011;
+    background-color: #fff;
+}
+.sidebar-overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s ease,opacity 0.5s ease;
+}
+.sidebar-open+.sidebar-overlay{  
+    visibility: visible;
+    opacity: 1;
+}
+.btn-toggle{
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 10;
+}
