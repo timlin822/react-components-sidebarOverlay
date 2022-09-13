@@ -29,11 +29,11 @@
     align-items: center;
     padding-bottom: 10px;
 }
-.btn-link{
+.main-navbar .btn-link{
     cursor: pointer;
     display: block;
     width: 100%;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     color: #fff;
     border-radius: 10px;
@@ -41,21 +41,21 @@
     margin: 5px 0px;
     transition: color 0.5s ease,background-color 0.5s ease;
 }
-.link-icon{
-    font-size: 18px;
+.main-navbar .link-icon{
+    font-size: 20px;
     margin-right: 8px;
 }
-.btn-link:hover{
+.main-navbar .btn-link:hover{
     color: #d80011;
     background-color: #fff;
 }
 .sidebar-overlay{
-    position: fixed;
-    top: 0px;
-    left: 0px;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
     z-index: 100;
     visibility: hidden;
     opacity: 0;
